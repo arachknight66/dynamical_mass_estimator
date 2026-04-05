@@ -1,0 +1,6 @@
+#!/home/arachknight/Documents/Projects/DynamicMass/dynamical_mass_estimator/Dynamical_mass_estimator/venv/bin/python3
+import sys
+from astropy.io.fits.scripts.fitsinfo import main
+if __name__ == '__main__':
+    sys.argv[0] = sys.argv[0].removesuffix('.exe')
+    sys.exit(main())

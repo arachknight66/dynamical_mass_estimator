@@ -10,3 +10,7 @@ astropy>=5.3
 # For SDSS or API-based data access
 requests>=2.31
 
+# Web UI and interactivity
+streamlit>=1.28
+plotly>=5.17
+
