@@ -4,7 +4,7 @@ This repository provides a pipeline to estimate the dynamical mass of galaxy clu
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### 1. **Setup (First Time Only)**
 ```bash
@@ -23,29 +23,29 @@ source venv/bin/activate
 streamlit run app.py
 ```
 
-The application will automatically open in your browser 🌌
+The application will automatically open in your browser 
 
 ---
 
-## 📋 Overview
+##  Overview
 
 Galaxy clusters are the most massive gravitationally bound systems in the universe. This project analyzes cluster member galaxies and computes the dynamical mass from redshift-based velocity dispersions.
 
 ---
 
-## ✨ Features
+##  Features
 
-### 🌐 Web UI Interface
+###  Web UI Interface
 - **Interactive Dashboard**: Parameter controls with real-time feedback
 - **3 Analysis Tabs**: 
-  - 📊 **Analysis**: View results & statistics
-  - 📈 **Plots**: Velocity distribution & mass comparisons
-  - 📋 **Data**: Download filtered galaxy data
+  -  **Analysis**: View results & statistics
+  -  **Plots**: Velocity distribution & mass comparisons
+  -  **Data**: Download filtered galaxy data
 - **Dark/Light Mode Toggle**: Switch themes seamlessly
 - **Responsive Design**: Works on desktop and tablet
 - **Publication-Ready Output**: Export data & visualizations
 
-### 🔍 Analysis Capabilities
+###  Analysis Capabilities
 - Query SDSS DR16 SkyServer directly
 - Filter galaxies by spectroscopic redshift
 - Calculate velocity dispersion
@@ -54,7 +54,7 @@ Galaxy clusters are the most massive gravitationally bound systems in the univer
 - Assess dark matter content
 - Generate statistical comparisons
 
-### 💻 Python Integration
+###  Python Integration
 - Reusable `ClusterAnalyzer` class
 - Jupyter notebook support
 - Batch processing capability
@@ -62,12 +62,12 @@ Galaxy clusters are the most massive gravitationally bound systems in the univer
 
 ---
 
-## 🎨 User Interface
+##  User Interface
 
 ### Dark Mode / Light Mode Toggle
 Located in the **left sidebar**, toggle between:
-- **🌙 Dark Mode**: Comfortable for evening analysis
-- **☀️ Light Mode**: Better for presentations
+- ** Dark Mode**: Comfortable for evening analysis
+- ** Light Mode**: Better for presentations
 
 ### Theme Features
 - **Smooth Transitions**: No page reload needed
@@ -78,7 +78,7 @@ Located in the **left sidebar**, toggle between:
 ### Dashboard Layout
 ```
 ┌─────────────────────────────────────┐
-│  🌌 Galaxy Cluster Estimator        │  <- Title with theme colors
+│   Galaxy Cluster Estimator        │  <- Title with theme colors
 │  [Info Box with Current Settings]   │
 ├─────────────────────────────────────┤
 │  [📊 Analysis] [📈 Plots] [📋 Data] │  <- Tab Navigation
@@ -93,7 +93,7 @@ Located in the **left sidebar**, toggle between:
 
 ---
 
-## 📖 How to Use
+##  How to Use
 
 ### Step 1: Set Query Parameters (Sidebar)
 - **RA**: Right Ascension (0-360°)
@@ -102,7 +102,7 @@ Located in the **left sidebar**, toggle between:
 - **Stellar Mass**: Per galaxy (default: 10¹¹ M☉)
 - **Redshift Filter**: Outlier removal threshold (1-5σ)
 
-### Step 2: Click "🚀 Start Analysis"
+### Step 2: Click " Start Analysis"
 The application will:
 1. Query SDSS SkyServer (queries can take 30-60 seconds)
 2. Filter galaxies by redshift
@@ -117,12 +117,12 @@ The application will:
 - **Data Tab**: Download detailed galaxy table as CSV
 
 ### Step 4: Download Results
-- Click **📥 Download Filtered Data** to export as CSV
+- Click ** Download Filtered Data** to export as CSV
 - Plots are automatically saved to `./plots/` directory
 
 ---
 
-## 🧮 The Virial Theorem
+##  The Virial Theorem
 
 The application uses the virial theorem to estimate cluster mass:
 
@@ -143,14 +143,14 @@ This assumes the cluster is in gravitational equilibrium.
 ```
 Dynamical_mass_estimator/
 │
-├── app.py                            🌐 Streamlit web interface
-├── examples.py                       📚 Python usage examples
-├── setup.sh                          🔧 Automated setup script
-├── requirements.txt                  📦 Python dependencies
+├── app.py                             Streamlit web interface
+├── examples.py                        Python usage examples
+├── setup.sh                           Automated setup script
+├── requirements.txt                   Python dependencies
 │
 ├── src/
-│   ├── cluster_analyzer.py           🔧 Core analysis module
-│   └── Notebookpart.ipynb            📓 Original Jupyter notebook
+│   ├── cluster_analyzer.py            Core analysis module
+│   └── Notebookpart.ipynb             Original Jupyter notebook
 │
 ├── venv/                             (Created by setup.sh)
 │   └── lib/python3.x/site-packages/   Virtual environment
@@ -170,7 +170,7 @@ Dynamical_mass_estimator/
 
 ---
 
-## 🔗 Integration with Jupyter
+##  Integration with Jupyter
 
 ### Using the Module in Notebooks
 
@@ -198,7 +198,7 @@ print(f"Dark Matter Ratio: {results['dark_matter_ratio']:.1f}x")
 
 ---
 
-## 📊 Example Analysis
+##  Example Analysis
 
 ### Sample Galaxies Clusters
 
@@ -226,15 +226,9 @@ Try these coordinates in the web UI sidebar!
 - Python 3.8+
 - Internet connection (for SDSS queries)
 - ~2GB disk space (for dependencies)
-
-### System Support
-- Linux ✅
-- macOS ✅
-- Windows ✅ (with WSL or native Python)
-
 ---
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 | Issue | Solution |
 |-------|----------|
@@ -255,7 +249,7 @@ Try these coordinates in the web UI sidebar!
 
 ---
 
-## 📧 Usage
+##  Usage
 
 This project demonstrates:
 - ✅ Connecting Jupyter notebooks with web UIs
@@ -266,13 +260,7 @@ This project demonstrates:
 
 ---
 
-## 📄 License
-
-Licensed for educational and research purposes.
-
----
-
-## ✅ Verification
+##  Verification
 
 After setup, verify everything works:
 
@@ -281,7 +269,7 @@ After setup, verify everything works:
 ls venv/
 
 # Test imports
-python3 -c "from src.cluster_analyzer import ClusterAnalyzer; print('✅ Module loaded')"
+python3 -c "from src.cluster_analyzer import ClusterAnalyzer; print('Module loaded')"
 
 # Start the UI
 streamlit run app.py
